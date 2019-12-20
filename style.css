@@ -1,0 +1,31 @@
+    #table {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+  
+    #table .row {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+    }
+  
+    #table .row:nth-child(2n) {
+        background: #ddd;
+    }
+  
+  
+    #table .col {
+        flex: 1 1 1px;
+    }
+  
+    #table .c1 {
+        flex: 3 3 1px;
+        text-align: left;
+        padding-left: 5px;
+    }
+  
+    #table .c2 {
+        border-left: 1px solid #000;
+    }
