@@ -11,19 +11,23 @@
 
 
 // document.getElementById("tableFrame").append(tableJava)
-
+function tableInit(){
 var table = $('<table>');
 
 for(i=0; i<8; i++){
     var row = $('<tr>').addClass('row' + i);
-        for(j=0; j<3; j++){
-            var col = $('<td>').addClass("col" + j).text("col " + j);
+        for(var j=0; j<3; j++){
+            var col = $('<td>').addClass("col" + j).text("col "+ j)
             row.append(col);
         };
 
     table.append(row);
 };
 
+// $("col0").text("9 AM")
+
 
 $('#tableFrame').append(table);
+};
 
+tableInit();
